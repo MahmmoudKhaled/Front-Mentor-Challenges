@@ -1,0 +1,144 @@
+/* general styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+hr {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid hsl(214deg 37% 22%);
+}
+
+/* end general styles */
+
+.card {
+    width: 330px;
+    height: 520px;
+    background-color: hsl(216, 50%, 16%);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.card h1 {
+    font-size: 21px;
+    padding-left: 7%;
+    padding-bottom: 15px;
+}
+
+.card h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 17px;
+    padding-left: 7%;
+    padding-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+
+.img-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 20px 20px 10px 20px;
+}
+
+.img-info::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 93%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.img-info:hover::after {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.main {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.view {
+    position: absolute;
+    display: none;
+}
+
+.img-info:hover .view {
+    display: block;
+}
+
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.num {
+    color: hsl(178, 100%, 50%);
+}
+
+.card-member {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.card-member span {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card-member span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-member img {
+    width: 35px;
+    margin-top: -10px;
+}
+
+.card-member p {
+    padding-top: 16px;
+    margin-left: -10px;
+    font-size: 15px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item img {
+    margin-right: 8px;
+}
